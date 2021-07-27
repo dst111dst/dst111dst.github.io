@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dst111dst.github.io</id>
+    <title>小戴今天吃饱了吗</title>
+    <updated>2021-07-27T17:51:17.854Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://dst111dst.github.io"/>
+    <link rel="self" href="https://dst111dst.github.io/atom.xml"/>
+    <subtitle>不爱学习 爱喝奶茶</subtitle>
+    <logo>https://dst111dst.github.io/images/avatar.png</logo>
+    <icon>https://dst111dst.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, 小戴今天吃饱了吗</rights>
+    <entry>
+        <title type="html"><![CDATA[6.15 正交投影和正交补]]></title>
+        <id>https://dst111dst.github.io/XItKEnA3y/</id>
+        <link href="https://dst111dst.github.io/XItKEnA3y/">
+        </link>
+        <updated>2021-06-15T15:24:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>注意：我们在线性变换中实际上就已经引入了投影的定义（通过核kernel和值域lm）。而在欧氏空间里，我们可以通过一个有限维的子空间和它对应的正交补来研究欧氏空间的结构。下面给出关于正交投影的定义。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>注意：我们在线性变换中实际上就已经引入了投影的定义（通过核kernel和值域lm）。而在欧氏空间里，我们可以通过一个有限维的子空间和它对应的正交补来研究欧氏空间的结构。下面给出关于正交投影的定义。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ch4: 数据科学的统计原则]]></title>
+        <id>https://dst111dst.github.io/gHU93ErHV/</id>
+        <link href="https://dst111dst.github.io/gHU93ErHV/">
+        </link>
+        <updated>2021-06-14T15:25:57.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="ch4-数据科学的统计原则">Ch4 : 数据科学的统计原则</h1>
+<p>真的很喜欢wll老师..但是也真的很讨厌这门课（555救命） 期末考结束之后感觉自己已经要over了，哭</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="ch4-数据科学的统计原则">Ch4 : 数据科学的统计原则</h1>
+<p>真的很喜欢wll老师..但是也真的很讨厌这门课（555救命） 期末考结束之后感觉自己已经要over了，哭</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hi,]]></title>
+        <id>https://dst111dst.github.io/about/</id>
+        <link href="https://dst111dst.github.io/about/">
+        </link>
+        <updated>2021-06-14T02:49:18.000Z</updated>
+        <summary type="html"><![CDATA[<p>很高兴认识你: )</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>很高兴认识你: )</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0608-这一年，不定停摆]]></title>
+        <id>https://dst111dst.github.io/rpKtkfcJ4/</id>
+        <link href="https://dst111dst.github.io/rpKtkfcJ4/">
+        </link>
+        <updated>2021-06-08T15:27:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>时间的累积并不会带来成长，与一年前的我相比，我甚至看到了倒退，各种意义上的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>时间的累积并不会带来成长，与一年前的我相比，我甚至看到了倒退，各种意义上的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[6.7 小困惑 矩阵相似和一点点实对称矩阵]]></title>
+        <id>https://dst111dst.github.io/0znRMJnOr/</id>
+        <link href="https://dst111dst.github.io/0znRMJnOr/">
+        </link>
+        <updated>2021-06-07T15:28:23.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0519-记录一道题]]></title>
+        <id>https://dst111dst.github.io/xkeE6cgV4/</id>
+        <link href="https://dst111dst.github.io/xkeE6cgV4/">
+        </link>
+        <updated>2021-05-19T15:17:59.000Z</updated>
+    </entry>
+</feed>
