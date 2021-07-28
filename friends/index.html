@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="欢迎来到我的站点噢">
+<meta name="theme-color" content="#000">
+<title>小戴今天吃饱了吗</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1627464337712">
+<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>小戴今天吃饱了吗</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">不爱学习，爱喝奶茶</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+  window.addEventListener('touchmove', func, { passive: false })
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">小戴</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>你好，我是小戴，恭喜你发现了这个秘密基地噢！</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+
+  
+    <div class="sidebar-item right-motion sidebar-item-friends">
+      
+        <p class="friends-title"><i class="fa fa-ship"></i> 友情链接</p>
+      
+      <div class="friends-box">
+        
+          <p>
+            <a href="https://dst111dst-2gq19zuh29beb0f4-1306672283.tcloudbaseapp.com/">新的站点</a>
+          </p>
+        
+      </div>
+    </div>
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box gemini box-shadow-wrapper">
+          <section class="friends-section bg-color slide-down-in">
+            <div class="firends-box">
+              <h1 class="firends-title" itemprop="name headline">友情链接</h1>
+              
+              
+              <a href="https://dst111dst-2gq19zuh29beb0f4-1306672283.tcloudbaseapp.com/" target="_blank">
+                <div class="firends-item">
+                  <img src="" />
+                  <div class="right">
+                    <div class="top">
+                      新的站点
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+              
+            </div>
+            <hr>
+            <div style="text-align:center">
+              <span class="with-love">
+                <i class="fa fa-heart"></i>
+              </span>
+              <span class="language" data-lan="leave-message">留言添加友链</span>
+              <span class="with-love">
+                <i class="fa fa-heart"></i>
+              </span>
+            </div>
+            <hr>
+            <div class="friends-note">
+              <p><strong class="language" data-lan="format">友链格式：</strong></p>
+              <ul>
+                <li><span class="language" data-lan="site-name">网站名称：</span>小戴今天吃饱了吗</li>
+                <li><span class="language" data-lan="site-link">网站地址：</span><a href="https://dst111dst.github.io" data-pjax-state="">https://dst111dst.github.io</a></li>
+                <li><span class="language" data-lan="site-desc">网站描述：</span>欢迎来到我的站点噢</li>
+                <li><span class="language" data-lan="site-img">网站头像：</span>
+                  <a href="https://dst111dst.github.io/images/avatar.png">https://dst111dst.github.io/images/avatar.png</a>
+                </li>
+              </ul>
+            </div>
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'pEEGnC5s42XoGBzN2hqyM8v8-gzGzoHsz',
+    appKey: 'TWyOzSQPtcH5n1BJhKVKgwV7',
+    avatar: '',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'false',
+    visitor: 'true' === 'false',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
+</script>
+
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <span id="busuanzi_container_site_pv">浏览数 <span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"></span> 人</span>
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2019 | Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      <a href="https://dst111dst-2gq19zuh29beb0f4-1306672283.tcloudbaseapp.com/" target="_blank">Another Secret Planet</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+  <div class="bg-img">
+    <img src="/media/images/custom-bgImg.png" />
+  </div>
+  
+  
+  
+  
+  
+  <script src="https://myhkw.cn/api/player/1627209479155" id="myhk" key="1627209479155" m="1"></script>
+
+
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.addEventListener('resize', function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, 'stop');
+      jQuery.Velocity(viewport, 'stop');
+      jQuery.Velocity(rightMotions, 'stop');
+      if (open) {
+        jQuery.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            jQuery.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        jQuery.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            jQuery.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch && faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll('.section img');
+  images.forEach(image => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement('a');
+    aelem.href = image.src;
+    aelem.dataset['fancybox'] = 'images';
+    aelem.dataset['rel'] = 'fancybox-button';
+    aelem.classList.add('fancybox');
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  })
+</script>
+
+  </div>
+</body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://dst111dst.github.io/post/guan-yu-lesslesslu-yi-bo-na-ba-de-wu-yue-shi-ba-ri-greatergreater-de-du-shu-bao-gao/"" data-c="
+          &lt;p&gt;这篇文章是用来test的&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;1-简介&#34;&gt;1 简介&lt;/h1&gt;
+&lt;h2 id=&#34;11-学术地位&#34;&gt;1.1 学术地位&lt;/h2&gt;
+&lt;p&gt;这本书并不算厚，但对于一个对相关领域不甚了解的理科生而言，阅读的过程也足以称得上漫长艰难。在这一过程里，我时常为马克思的深刻洞见而倍感震撼，尤其是考虑到其政治时评的原始定位。从选题来看，《雾⽉⼗⼋⽇》看上去只是⻢克思所写的⼀篇时事政治评论，⽽⾮⼀部典型意义下的史学著作。我所看到的大多数情况下，历史学家往往对当前发生的政治事件采取相当谨慎的态度，鲜少有人立即发表意见。这也不难理解，主要是由于新近发生的事件没有经历时间的沉淀，它的前因后果往往被掩盖在众多纷乱的表象之下，很难让人看到其本源。这一点在我看到托克维尔的著作《旧制度与大革命》时，体会得更深了。&lt;/p&gt;
+&lt;p&gt;作为与⻢克思同时代的伟⼤历史学家、社会学家，托克维尔就是⼀个典型例⼦。他是1848年⾰命的当事⼈，1849年曾短期出任过外交部⻓，1851年2⽉，在波拿巴政变后愤⽽退出政坛。托克维尔在1850年12⽉给友⼈的信中谈到，“我所思索的只能是当代的问题，”但“我必须为我的思想找到某种坚实⽽连续的事实基础。只有在书写历史时我才能找到这个基础。”他当时计划的是研究拿破仑称帝的10年历史，通过展示“这个宏伟事业的诞⽣、发展、衰落到覆灭”，从⽽“⽣动地反映前⼀时代，还有它随后的时代”。然而，在波拿巴政变后，托克维尔将研究的重⼼转向了旧制度：“我希望去努⼒理解，当⼤⾰命突然爆发时，旧制度的法国究竟是怎样的，⼈⺠的状况如何，公共⾏政的习惯如何”.&lt;/p&gt;
+&lt;p&gt;虽然⻢克思与托克维尔同样希望对法国⾰命史进⾏整体性的思考，但他却选择了刚刚发⽣的波拿巴政变为⼊⼿点。这对于⻢克思的历史洞察⼒不能不说是⼀个巨⼤的考验。如果说研究历史的⼀⼤危险是⽤后⻅之明来简化历史，那么，研究当下的主要困难就在于缺乏先⻅之明，浮在凌乱不堪的现实材料的表⾯。⽐如，与《雾⽉⼗⼋⽇》同时期论述同⼀问题的有两部名⼈之作：⼀部是著名作家⾬果所写的《⼩拿破仑》，另⼀部是著名的⽆政府主义政论家蒲鲁东所写的《从⼗⼆⽉⼗⽇政变看社会⾰命》。尽管这两部著作当时广为流传，但⻢克思却⼀语道破它们的苍⽩⽆⼒之处：当⾬果“说这个⼈表现了世界历史上空前强⼤的个⼈主动性时，他就不是把这个⼈写成⼩⼈物⽽是写成巨⼈了”；⽽蒲鲁东“关于政变的历史构想不知不觉地变成了对政变主⻆所作的历史辩护”。与之产生强烈对比的是，⻢克思本⼈对波拿巴政变的分析表现出了极其敏锐的洞察⼒和绝对超前的预⻅⼒。正如恩格斯在1885年该著第三版发⾏时的序⾔中所写的那样：“这是⼀部天才的著作”，⻢克思对这⼀事变的“这幅图画描绘得如此⾼明，以致后来每⼀次新的揭露，都只是提供出新的证据，证明这幅图画是多么忠实地反映了实际。他对活⽣⽣的时事有这样卓越的理解，他在事变刚刚发⽣时就对事变有这样透彻的洞察，的确是⽆与伦⽐”。也正因为⻢克思这种异乎寻常的洞察⼒，使他的这篇时事政治评论经过时间的酿造变成了⼀部不朽的史学经典。&lt;/p&gt;
+&lt;h2 id=&#34;12-内容概括&#34;&gt;1.2 内容概括&lt;/h2&gt;
+&lt;p&gt;在进一步的分析之前，我想先对全文的内容进行简要概括。正如我在上一部分提到的那样，马克思在这里尝试解决的问题是，为什么很多⼈翘⾸以盼1789年⾰命的重演，最终1848年的⾰命的结局却以惨淡收场。因此，全书主要是对“法国⾰命从1848年4⽉24⽇到1851年12⽉所经过的阶段⼤致总结”，这段时期可以分为三个具体阶段：&lt;/p&gt;
+&lt;p&gt;第⼀个阶段是⼆⽉时期，即共和国建⽴的时期，从路易·菲利普被推翻、到制宪议会开始为⽌，这一时期的结果表现为：各⽅势⼒集团（王朝反对派、共和派资产阶级、⺠主共和派⼩资产阶级和社会⺠主派⼯⼈等）都在⼆⽉政府中取得了临时位置。然⽽，⻢克思认为这种偶成性的⾰命结果天生具有问题：⽆产阶级并不具有⾜够的能⼒驾驭这短暂的胜利结果，即“这个内容和在当时的情况与条件下、在群众已达到的教育⽔平上⽤现成材料所能⽴刻直接实现的⼀切都是极为⽭盾的”；⽽这其中，代表阶级的具体人物也多安于现状。因此，我们可以对这一阶段进行总结：社会共和国仅仅是外⾐，和谐、谋求⾰新的势⼒与浮夸混乱、墨守成规的顽固旧习、私下各势⼒的彼此算计混杂在⼀起。旧的势⼒在这个过程中却正在悄然酝酿，并获得了农⺠和⼩资产者的意外⽀持。&lt;/p&gt;
+&lt;p&gt;第⼆个阶段是共和国制宪国⺠议会时期，这⼀时期主要是⽆产阶级、共和派资产阶级和秩序党之间的相互⽭盾与⽃争。先是⼀切阶级联合起来反对⽆产阶级，⽆产阶级在了解国⺠制宪会议的性质后、企图将其解散；而在六⽉事变后，⽆产阶级退出政治舞台；资产阶级共和派在拿破仑当选后退出；最后是共和派的制宪议会与波拿巴、秩序党进⾏⽃争，最终结果为：制宪议会灭亡，资产阶级共和派失败。&lt;/p&gt;
+&lt;p&gt;第三阶段则是⽴宪共和国和⽴法国⺠议会，先是⼩资产阶级与波拿巴及波拿巴的同谋资产阶级之间的⽃争，在六⽉⼗三⽇事件后，⼩资产阶级受到挫败；接着，由各派系组成的秩序党执政，意图废除普选权实⾏专政，却最终失去议会内阁；然后是议会资产阶级与波拿巴的⽃争，这⼀阶段里，议会失去军队总指挥权和⾏政⽀配权，秩序党在失去议会后与共和派、⼭岳党联合企图修改宪法，但秩序党最终被分解为各个构成部分，资产阶级议会和报刊最终同资产阶级群众决裂；在最后阶段，议会和⾏政权公开决裂，议会最终被⾃⼰的阶级、军队及其他阶级所抛弃，议会制度和资产阶级统治由此覆灭，波拿巴及其代表的帝制获得最终胜利——“资产阶级社会中的败类组成维护秩序的神圣队伍，⽽主⼈公克拉普林斯基就以‘社会救主’的资格进⼊了⼟伊勒⾥宫”。&lt;/p&gt;
+">关于《路易·波拿巴的雾月十八日》的读书报告1</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+
+
+
+
+</html>
