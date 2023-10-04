@@ -1,0 +1,19 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Shitong Dai",
+  "home_page_url": "https://dst111dst.github.io/",
+  "feed_url": "https://dst111dst.github.io/feed.json",
+  "description": "A minimal hugo theme focus on content",
+  "favicon": "https://dst111dst.github.io//assets/favicon.ico",
+  "expired": false,
+  "author": {
+    "name": "Calvin Tran",
+    "url": "https://dst111dst.github.io/"
+  },
+  "items": [
+    
+    
+
+    
+  ]
+}
